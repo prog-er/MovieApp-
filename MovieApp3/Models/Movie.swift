@@ -12,12 +12,14 @@ struct TrendingMoviesResponse: Codable{
 }
 
 struct Movie: Codable{
-    let id: Int
-    let original_name: String?
+    let id: Int?
+    let media_type: String?
+    let original_language: String?
     let original_title: String?
-    let poster_path: String?
     let overview: String?
-    let vote_count: Int
+    let poster_path: String?
     let release_date: String?
-    let vote_averege: Double  
+    let title: String?
+    let vote_averege: Double?
+    let vote_count: Int?
 }

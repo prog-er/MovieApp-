@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F6629F7A2CEFF893007C9C76 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F6629F792CEFF893007C9C76 /* SDWebImage */; };
+		F6629F7C2CEFF893007C9C76 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6629F7B2CEFF893007C9C76 /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F6629F2D2CEC6219007C9C76 /* MovieApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6629F7C2CEFF893007C9C76 /* SDWebImageMapKit in Frameworks */,
+				F6629F7A2CEFF893007C9C76 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = MovieApp3;
 			packageProductDependencies = (
+				F6629F792CEFF893007C9C76 /* SDWebImage */,
+				F6629F7B2CEFF893007C9C76 /* SDWebImageMapKit */,
 			);
 			productName = MovieApp3;
 			productReference = F6629F2D2CEC6219007C9C76 /* MovieApp3.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = F6629F242CEC6219007C9C76;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6629F782CEFF893007C9C76 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6629F2E2CEC6219007C9C76 /* Products */;
 			projectDirPath = "";
@@ -149,7 +161,6 @@
 				INFOPLIST_FILE = MovieApp3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -176,7 +187,6 @@
 				INFOPLIST_FILE = MovieApp3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +343,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6629F782CEFF893007C9C76 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6629F792CEFF893007C9C76 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6629F782CEFF893007C9C76 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F6629F7B2CEFF893007C9C76 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6629F782CEFF893007C9C76 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6629F252CEC6219007C9C76 /* Project object */;
 }
